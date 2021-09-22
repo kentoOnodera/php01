@@ -1,0 +1,14 @@
+CREATE TABLE companies(
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  place VARCHAR(255),
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+)DEFAULT CHARACTER SET=utf8mb3;
+
+INSERT INTO companies(
+  name,
+  place
+)VALUES(
+  'albions',
+  'Tokyo'
+);
